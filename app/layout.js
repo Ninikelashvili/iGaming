@@ -19,6 +19,10 @@ export const metadata = {
   title: "iGaming Landing Page",
   description:
     "Join the next level of iGaming! Secure, fast, and rewarding online gaming experience with top-tier entertainment and exclusive offers.",
+  keywords:
+    "online gaming, iGaming, secure gaming, gaming offers, entertainment, exclusive rewards",
+  author: "Name or Company",
+  robots: "index, follow",
 };
 
 export default function RootLayout({ children }) {

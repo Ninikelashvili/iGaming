@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Hero = () => {
   return (
     <div
@@ -14,12 +16,12 @@ export const Hero = () => {
           Play casino games, bet on sports, and win big. Join now and get a{" "}
           <span className="text-sunsetGold font-bold">100% Welcome Bonus</span>!
         </p>
-        <a
+        <Link
           href="/signup"
           className="mt-6 text-xs inline-block bg-burntSienna text-black font-bold py-2.5 px-8 rounded-full hover:bg-sunsetGold transition z-10 md:text-base  md:py-3 md:px-10"
         >
           Get Started
-        </a>
+        </Link>
       </div>
     </div>
   );
