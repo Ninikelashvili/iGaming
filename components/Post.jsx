@@ -2,10 +2,7 @@ import Link from "next/link";
 
 const Post = ({ post }) => {
   return (
-    <li
-      className="border rounded-xl mt-5 px-5 pb-8 flex flex-col justify-between items-center border-burntSienna/20 md:border-burntSienna md:rounded-t-none md:border-t-0 md:pb-8 md:rounded-b-xl md:border-x md:border-b"
-      key={post.id}
-    >
+    <li className="border rounded-xl mt-5 px-5 pb-8 flex flex-col justify-between items-center border-burntSienna/20 md:border-burntSienna md:rounded-t-none md:border-t-0 md:pb-8 md:rounded-b-xl md:border-x md:border-b">
       <div className="w-full">
         {post._embedded?.author?.[0] && (
           <div className="flex flex-col items-center mt-8 mb-3 md:mb-0 md:mt-0 md:transform md:-translate-y-10">

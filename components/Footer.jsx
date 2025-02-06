@@ -23,7 +23,7 @@ export const Footer = () => {
                 <li className="font-medium">
                   <Link
                     className="border-b border-transparent transition-all duration-300 hover:border-darkEspresso"
-                    href="/terms"
+                    href="/"
                     target="_blanck"
                   >
                     Terms & Conditions
@@ -32,7 +32,7 @@ export const Footer = () => {
                 <li className="font-medium">
                   <Link
                     className="border-b border-transparent transition-all duration-300 hover:border-darkEspresso"
-                    href="/contact"
+                    href="/"
                     target="_blanck"
                   >
                     Contact Us
@@ -50,16 +50,7 @@ export const Footer = () => {
                 <li className="font-medium">
                   <Link
                     className="border-b border-transparent transition-all duration-300 hover:border-darkEspresso"
-                    href="/privacy"
-                    target="_blanck"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li className="font-medium">
-                  <Link
-                    className="border-b border-transparent transition-all duration-300 hover:border-darkEspresso"
-                    href="/affiliate"
+                    href="/"
                     target="_blanck"
                   >
                     Affiliate Program

@@ -1,7 +1,20 @@
-import Post from "./Post";
+"use client";
+import { useEffect, useState } from "react";
 import { BadReq } from "./BadReq";
+import { Loader } from "./Loader";
+import Post from "./Post";
 
 export const Posts = ({ posts, error }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (posts || error) {
+      setLoading(false);
+    }
+  }, [posts, error]);
+
+  if (loading) return <Loader />;
+
   if (error) return <BadReq message={error} />;
 
   return (
@@ -14,7 +27,7 @@ export const Posts = ({ posts, error }) => {
       </div>
       <ul className="grid gap-10 grid-cols-1 md:mt-10 md:grid-cols-3 md:gap-6">
         {posts.map((post) => (
-          <Post post={post} />
+          <Post key={post.id} post={post} />
         ))}
       </ul>
     </div>
